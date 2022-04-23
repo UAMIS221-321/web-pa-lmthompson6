@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Resources/Styles/index.css">
     <title>Book Rental</title>
   </head>
-  <body onload="handleOnload()">
+  <body onload="handleOnload()" style="background-color:gainsboro">
       <script src="./Resources/Scripts/api.js"></script>
       <script src="./Resources/Scripts/index.js"></script>
       <div class="jumbotron">
@@ -28,7 +28,7 @@
                     <h3>Available Books</h3>
                     <div id="listBox"></div>
                 </div>
-                <div class = "col-md-6">
+                <div class = "col-md-6">                 
                     <h3 class="inputHeader">Book Information</h3>
                     <form onsubmit="return false;" method="post">
                     <label for="bookTitle">Title</label>
@@ -53,6 +53,8 @@
                     <button id="deleteButton" class="btn btn-danger" onclick="handleDeleteClick()">Delete</button>
                     <br>
                     <button id="rentButton" class="btn btn-secondary btn-lg btnBottom" onclick="handleRentClick()">Rent</button>
+                    <div class="space"></div>
+                    
                     <button id="returnButton" class="btn btn-secondary btn-lg btnBottom" onclick="handleReturnClick()">Return</button>
                     <span id="saveButton"></span>
                 </div>
